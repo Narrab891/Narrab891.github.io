@@ -1,142 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Market Prediction and Portfolio Impact Analysis</title>
+  <meta charset="UTF-8">
+  <title>Market Prediction and Portfolio Impact Analysis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      color: #1a237e;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: #fff;
+      margin-bottom: 30px;
+    }
+
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #e3f2fd;
+      color: #0d47a1;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    a {
+      color: #1565c0;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .output-img {
+      max-width: 100%;
+      width: 400px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .output-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Market Prediction and Portfolio Impact Analysis</h1>
+  <h1>Market Prediction and Portfolio Impact Analysis</h1>
 
-<h2>Project Overview</h2>
-<p>The <strong>Market Prediction and Portfolio Impact Analysis</strong> project is a tool designed to assist traders in assessing the potential impact of various market events on their portfolios. Using a combination of historical market data, real-time feeds, machine learning algorithms, and statistical models, the system predicts future market trends and visualizes how these trends will influence an investor's portfolio.</p>
-<p><strong>My Contribution</strong>: I primarily focused on the development of the market prediction input handler, real-time data integration, ML-based forecasting models, and portfolio impact visualization. Additionally, I worked on enhancing the follow-up query handling functionality, allowing traders to refine their predictions.</p>
+  <h2>Project Overview</h2>
+  <p>The <strong>Market Prediction and Portfolio Impact Analysis</strong> project is a tool designed to assist traders in assessing the potential impact of various market events on their portfolios. Using a combination of historical market data, real-time feeds, machine learning algorithms, and statistical models, the system predicts future market trends and visualizes how these trends will influence an investor's portfolio.</p>
+  <p><strong>My Contribution</strong>: I primarily focused on the development of the market prediction input handler, real-time data integration, ML-based forecasting models, and portfolio impact visualization. Additionally, I worked on enhancing the follow-up query handling functionality, allowing traders to refine their predictions.</p>
 
-<h2>Sprint Objectives Summary</h2>
-<table border="1" cellpadding="6" cellspacing="0">
+  <h2>Sprint Objectives Summary</h2>
+  <table>
     <tr>
-        <th>Sprint</th>
-        <th>Objective</th>
-        <th>Outcome</th>
+      <th>Sprint</th>
+      <th>Objective</th>
+      <th>Outcome</th>
     </tr>
     <tr>
-        <td><strong>Sprint 1</strong></td>
-        <td>Minimal Viable Product (MVP): Develop the core market prediction engine and integrate Yahoo Finance API for fetching historical data.</td>
-        <td>Completed input handler and data integration for market queries.</td>
+      <td><strong>Sprint 1</strong></td>
+      <td>Minimal Viable Product (MVP): Develop the core market prediction engine and integrate Yahoo Finance API for fetching historical data.</td>
+      <td>Completed input handler and data integration for market queries.</td>
     </tr>
     <tr>
-        <td><strong>Sprint 2</strong></td>
-        <td>Infrastructure Spike: Enhance prediction models with statistical analysis and real-time data integration; develop portfolio correlation analysis.</td>
-        <td>Real-time feeds integrated, statistical forecasting models implemented.</td>
+      <td><strong>Sprint 2</strong></td>
+      <td>Infrastructure Spike: Enhance prediction models with statistical analysis and real-time data integration; develop portfolio correlation analysis.</td>
+      <td>Real-time feeds integrated, statistical forecasting models implemented.</td>
     </tr>
     <tr>
-        <td><strong>Sprint 3</strong></td>
-        <td>Experimental Agent Selection: Implement and test advanced ML models; integrate CrewAI for optimization.</td>
-        <td>Integrated CrewAI with ML predictions and developed visual impact representation.</td>
+      <td><strong>Sprint 3</strong></td>
+      <td>Experimental Agent Selection: Implement and test advanced ML models; integrate CrewAI for optimization.</td>
+      <td>Integrated CrewAI with ML predictions and developed visual impact representation.</td>
     </tr>
     <tr>
-        <td><strong>Sprint 4</strong></td>
-        <td>Working MVP: Finalize the prediction engine and optimize the system for scalability and performance.</td>
-        <td>Refactored main forecasting function and optimized follow-up handling logic.</td>
+      <td><strong>Sprint 4</strong></td>
+      <td>Working MVP: Finalize the prediction engine and optimize the system for scalability and performance.</td>
+      <td>Refactored main forecasting function and optimized follow-up handling logic.</td>
     </tr>
-</table>
+  </table>
 
-<h2>Summarized User Story / Task Section</h2>
+  <h2>Summarized User Story / Task Section</h2>
+  <table>
+    <tr>
+      <th>Sprint</th>
+      <th>User Story/Task</th>
+      <th>Key Tasks</th>
+    </tr>
+    <tr>
+      <td><strong>Sprint 1</strong></td>
+      <td><strong>SC1.1</strong>: Developed the Market Prediction Input Handler to process trader queries and integrated Yahoo Finance API for stock data fetching.</td>
+      <td>Implemented user input handler class, integrated Yahoo Finance API, and ensured smooth data retrieval for predictions.</td>
+    </tr>
+    <tr>
+      <td rowspan="5"><strong>Sprint 2</strong></td>
+      <td><strong>SC1.2</strong>: Integrated Historical Market Data and Real-Time Feeds to enhance the prediction engine with fresh market data.</td>
+      <td>Integrated market data feeds.</td>
+    </tr>
+    <tr>
+      <td><strong>SC1.3</strong>: Developed Statistical and ML-Based Forecasting Models for stock prediction.</td>
+      <td>Created statistical models and implemented machine learning-based forecasting.</td>
+    </tr>
+    <tr>
+      <td><strong>SC1.4</strong>: Created Portfolio Correlation Analysis to show how market changes affect portfolio assets.</td>
+      <td>Developed correlation analysis for portfolio impact.</td>
+    </tr>
+    <tr>
+      <td><strong>SC1.5</strong>: Completed Unit Testing for prediction outputs to ensure reliability and accuracy.</td>
+      <td>Conducted unit testing for prediction outputs.</td>
+    </tr>
+    <tr>
+      <td><strong>SC1.6</strong>: Integrated a Charting Library (Plotly/Matplotlib) to visualize market predictions.</td>
+      <td>Integrated Plotly/Matplotlib for data visualization.</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><strong>Sprint 3</strong></td>
+      <td><strong>SC1.7</strong>: Integrated CrewAI with ML Algorithms to enhance prediction accuracy.</td>
+      <td>Integrated CrewAI for prediction accuracy.</td>
+    </tr>
+    <tr>
+      <td><strong>SC1.8</strong>: Developed visual representations of how market predictions impact portfolios, helping traders visualize changes in real-time.</td>
+      <td>Developed visual impact charts for portfolio analysis.</td>
+    </tr>
+    <tr>
+      <td><strong>SC1.9</strong>: Implemented Follow-Up Query Handling to allow traders to adjust their predictions, optimizing the system’s responsiveness.</td>
+      <td>Refined follow-up query logic for real-time adjustments.</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><strong>Sprint 4</strong></td>
+      <td><strong>SC1.10</strong>: Finalized the Main Forecasting Function, ensuring scalability and optimization.</td>
+      <td>Refined the forecasting function for performance.</td>
+    </tr>
+    <tr>
+      <td><strong>SC1.11</strong>: Improved Follow-Up Handling Logic to better process multiple queries and adjustments.</td>
+      <td>Optimized the follow-up handling logic for multiple queries.</td>
+    </tr>
+    <tr>
+      <td><strong>SC1.12</strong>: Optimized CrewAI and ML Prediction Flow for performance and accuracy.</td>
+      <td>Optimized CrewAI and ML prediction flow for accuracy.</td>
+    </tr>
+  </table>
 
-<table border="1" cellpadding="6" cellspacing="0">
-    <tr>
-        <th>Sprint</th>
-        <th>User Story/Task</th>
-        <th>Key Tasks</th>
-    </tr>
-    <tr>
-        <td><strong>Sprint 1</strong></td>
-        <td><strong>SC1.1</strong>: Developed the Market Prediction Input Handler to process trader queries and integrated Yahoo Finance API for stock data fetching.</td>
-        <td>Implemented user input handler class, integrated Yahoo Finance API, and ensured smooth data retrieval for predictions.</td>
-    </tr>
-    <tr>
-        <td rowspan="5"><strong>Sprint 2</strong></td>
-        <td><strong>SC1.2</strong>: Integrated Historical Market Data and Real-Time Feeds to enhance the prediction engine with fresh market data.</td>
-        <td>Integrated market data feeds.</td>
-    </tr>
-    <tr>
-        <td><strong>SC1.3</strong>: Developed Statistical and ML-Based Forecasting Models for stock prediction.</td>
-        <td>Created statistical models and implemented machine learning-based forecasting.</td>
-    </tr>
-    <tr>
-        <td><strong>SC1.4</strong>: Created Portfolio Correlation Analysis to show how market changes affect portfolio assets.</td>
-        <td>Developed correlation analysis for portfolio impact.</td>
-    </tr>
-    <tr>
-        <td><strong>SC1.5</strong>: Completed Unit Testing for prediction outputs to ensure reliability and accuracy.</td>
-        <td>Conducted unit testing for prediction outputs.</td>
-    </tr>
-    <tr>
-        <td><strong>SC1.6</strong>: Integrated a Charting Library (Plotly/Matplotlib) to visualize market predictions.</td>
-        <td>Integrated Plotly/Matplotlib for data visualization.</td>
-    </tr>
-    <tr>
-        <td rowspan="3"><strong>Sprint 3</strong></td>
-        <td><strong>SC1.7</strong>: Integrated CrewAI with ML Algorithms to enhance prediction accuracy.</td>
-        <td>Integrated CrewAI for prediction accuracy.</td>
-    </tr>
-    <tr>
-        <td><strong>SC1.8</strong>: Developed visual representations of how market predictions impact portfolios, helping traders visualize changes in real-time.</td>
-        <td>Developed visual impact charts for portfolio analysis.</td>
-    </tr>
-    <tr>
-        <td><strong>SC1.9</strong>: Implemented Follow-Up Query Handling to allow traders to adjust their predictions, optimizing the system’s responsiveness.</td>
-        <td>Refined follow-up query logic for real-time adjustments.</td>
-    </tr>
-    <tr>
-        <td rowspan="3"><strong>Sprint 4</strong></td>
-        <td><strong>SC1.10</strong>: Finalized the Main Forecasting Function, ensuring scalability and optimization.</td>
-        <td>Refined the forecasting function for performance.</td>
-    </tr>
-    <tr>
-        <td><strong>SC1.11</strong>: Improved Follow-Up Handling Logic to better process multiple queries and adjustments.</td>
-        <td>Optimized the follow-up handling logic for multiple queries.</td>
-    </tr>
-    <tr>
-        <td><strong>SC1.12</strong>: Optimized CrewAI and ML Prediction Flow for performance and accuracy.</td>
-        <td>Optimized CrewAI and ML prediction flow for accuracy.</td>
-    </tr>
-</table>
+  <h2>Contributions</h2>
 
-<h2>Contributions</h2>
-
-<h3>GitHub Repository</h3>
-<ul>
+  <h3>GitHub Repository</h3>
+  <ul>
     <li><a href="https://github.com/Narrab891/AI-Agent-Stock-Prediction" target="_blank">GitHub Repository</a></li>
-</ul>
+  </ul>
 
-<h3>Code Contributions</h3>
-<ul>
+  <h3>Code Contributions</h3>
+  <ul>
     <li><strong>Market Prediction Input Handler</strong>: <a href="https://github.com/Narrab891/AI-Agent-Stock-Prediction/commit/e6690801c1a597fa367b9f8ac3e09f579215da0e#diff-423758a6c9d4dfadaf1c0bdaec3b35d8c2df99b28cbdb74218e9e998c488dffd" target="_blank">Code Example</a></li>
     <li><strong>Prediction Engine</strong>: <a href="https://github.com/Narrab891/AI-Agent-Stock-Prediction/commit/e6690801c1a597fa367b9f8ac3e09f579215da0e#diff-ecae6d98f757ef80b581e3fefe79487b89124fbfba053ed7ff084b47c996c92a" target="_blank">Code Example</a></li>
     <li><strong>Portfolio Impact Visualization</strong>: <a href="https://github.com/Narrab891/AI-Agent-Stock-Prediction/commit/e6690801c1a597fa367b9f8ac3e09f579215da0e#diff-423758a6c9d4dfadaf1c0bdaec3b35d8c2df99b28cbdb74218e9e998c488dffd" target="_blank">Code Example</a></li>
-</ul>
+  </ul>
 
-<h3>Output Images</h3>
-<div>
-    <img src="https://raw.githubusercontent.com/Narrab891/Narrab891.github.io/main/output1.png" alt="Output 1" width="400">
-    <img src="https://raw.githubusercontent.com/Narrab891/Narrab891.github.io/main/output2.png" alt="Output 2" width="400">
-    <img src="https://raw.githubusercontent.com/Narrab891/Narrab891.github.io/main/output3.png" alt="Output 3" width="400">
-    <img src="https://raw.githubusercontent.com/Narrab891/Narrab891.github.io/main/output4.png" alt="Output 4" width="400">
-    <img src="https://raw.githubusercontent.com/Narrab891/Narrab891.github.io/main/output5.png" alt="Output 5" width="400">
-</div>
+  <h3>Output Images</h3>
+  <div class="output-gallery">
+    <img src="https://raw.githubusercontent.com/Narrab891/Narrab891.github.io/main/output1.png" alt="Output 1" class="output-img">
+    <img src="https://raw.githubusercontent.com/Narrab891/Narrab891.github.io/main/output2.png" alt="Output 2" class="output-img">
+    <img src="https://raw.githubusercontent.com/Narrab891/Narrab891.github.io/main/output3.png" alt="Output 3" class="output-img">
+    <img src="https://raw.githubusercontent.com/Narrab891/Narrab891.github.io/main/output4.png" alt="Output 4" class="output-img">
+    <img src="https://raw.githubusercontent.com/Narrab891/Narrab891.github.io/main/output5.png" alt="Output 5" class="output-img">
+  </div>
 
-<h2>Appendix</h2>
+  <h2>Appendix</h2>
 
-<h3>All Commits</h3>
-<p>Here is the full list of commits associated with this project. Each commit links directly to the respective commit in the GitHub repository:</p>
-<ul>
+  <h3>All Commits</h3>
+  <p>Here is the full list of commits associated with this project. Each commit links directly to the respective commit in the GitHub repository:</p>
+  <ul>
     <li><strong>Sprint 1</strong>: Implemented Market Prediction Input Handler and Yahoo Finance API integration.</li>
     <li><strong>Sprint 2</strong>: Integrated real-time market data and statistical forecasting models.</li>
     <li><strong>Sprint 3</strong>: Added CrewAI integration and ML algorithm for optimized predictions.</li>
     <li><strong>Sprint 4</strong>: Refactored main forecasting function and optimized prediction flow.</li>
-</ul>
-<p>You can view all commits on the <a href="https://github.com/Narrab891/AI-Agent-Stock-Prediction/commits" target="_blank">GitHub repository commit page</a>.</p>
+  </ul>
+  <p>You can view all commits on the <a href="https://github.com/Narrab891/AI-Agent-Stock-Prediction/commits" target="_blank">GitHub repository commit page</a>.</p>
 
 </body>
 </html>
