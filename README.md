@@ -57,11 +57,6 @@ Here are some key snippets showcasing my contributions:
 
 
 
-
-
-
-
-
 ## Appendix
 
 ### All Commits
