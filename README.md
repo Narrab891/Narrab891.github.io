@@ -48,7 +48,17 @@ Here are some key snippets showcasing my contributions:
 
 ### Results
 
-Below are some important contributions to the project (output):
+
+![results](output1.png)
+![results](output2.png)
+![results](output3.png)
+![results](output4.png)
+![results](output5.png)
+
+
+
+
+
 
 
 
