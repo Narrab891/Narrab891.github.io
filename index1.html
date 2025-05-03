@@ -13,6 +13,9 @@
         h1, h2 {
             color: #2c3e50;
         }
+        h2 {
+            margin-top: 40px;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -22,7 +25,7 @@
             border: 1px solid #ccc;
         }
         th {
-            background-color: #f0f0f0;
+            background-color: #ecf0f1;
         }
         th, td {
             padding: 10px;
@@ -39,13 +42,27 @@
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
+            justify-content: flex-start;
+            margin-bottom: 40px;
         }
         .image-gallery img {
             width: 300px;
             height: auto;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 5px;
             background-color: #fff;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+        }
+        ul {
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+            border-top: 1px solid #ccc;
         }
     </style>
 </head>
@@ -61,9 +78,9 @@
     market trends and visualizes how these trends will influence an investor's portfolio.
 </p>
 <p>
-    <strong>My Contribution:</strong> I primarily focused on the development of the market prediction input handler,
-    real-time data integration, ML-based forecasting models, and portfolio impact visualization. Additionally,
-    I worked on enhancing the follow-up query handling functionality, allowing traders to refine their predictions.
+    <strong>My Contribution:</strong> I focused on developing the market prediction input handler,
+    integrating real-time data, building ML-based forecasting models, and designing portfolio impact visualizations.
+    I also enhanced the follow-up query system for more dynamic interaction.
 </p>
 
 <h2>Sprint Objectives Summary</h2>
@@ -75,23 +92,23 @@
     </tr>
     <tr>
         <td><strong>Sprint 1</strong></td>
-        <td>MVP: Develop the market prediction engine and integrate Yahoo Finance API</td>
+        <td>MVP: Develop market prediction engine + Yahoo Finance API integration</td>
         <td>Completed input handler and data integration</td>
     </tr>
     <tr>
         <td><strong>Sprint 2</strong></td>
-        <td>Infrastructure Spike: Enhance models, integrate real-time data, correlation analysis</td>
-        <td>Real-time feeds + statistical models implemented</td>
+        <td>Enhance models, integrate real-time data, perform correlation analysis</td>
+        <td>Real-time feeds and statistical models implemented</td>
     </tr>
     <tr>
         <td><strong>Sprint 3</strong></td>
-        <td>Experimental Agent Selection: Test ML models, CrewAI optimization</td>
-        <td>CrewAI integrated with visual impact representation</td>
+        <td>Test ML models, CrewAI integration, optimize query interaction</td>
+        <td>CrewAI added with portfolio impact visualization</td>
     </tr>
     <tr>
         <td><strong>Sprint 4</strong></td>
-        <td>Working MVP: Finalize and optimize prediction engine</td>
-        <td>Refactored forecasting and follow-up logic</td>
+        <td>Finalize and optimize forecasting engine</td>
+        <td>Refined prediction and query handling</td>
     </tr>
 </table>
 
@@ -179,10 +196,13 @@
     <img src="output5.png" alt="Output 5">
 </div>
 
-
 <h2>Appendix</h2>
 <h3>All Commits</h3>
 <p>View full history at the <a href="https://github.com/Narrab891/AI-Agent-Stock-Prediction/commits" target="_blank">commit page</a>.</p>
+
+<footer>
+    &copy; 2025 Market Prediction Project | Developed by Narrab891
+</footer>
 
 </body>
 </html>
